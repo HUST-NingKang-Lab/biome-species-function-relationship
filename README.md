@@ -28,83 +28,83 @@ your local machine for development and testing purposes. See deployment
 for notes on how to deploy the project on a live system.
 ```reStructuredText
 .
-├── data										Intermediate file for the analysis of biome–species–function relationship 
-│   ├── 3Dstructure								3D structure model and multiple sequences alignment for PF05425 and PF12597
-│   │   ├── PF05425.hhba3m						multiple sequence alignment in a3m format 
-│   │   ├── PF05425.hhbaln						multiple sequence alignment in aln format
-│   │   ├── PF05425.hmsa3m						multiple sequence alignment for C-QUARK 
-│   │   ├── PF05425.hmsaln						multiple sequence alignment for C-QUARK
-│   │   ├── PF05425.jaca3m						multiple sequence alignment for C-QUARK
-│   │   ├── PF05425.jacaln						multiple sequence alignment for C-QUARK
-│   │   ├── PF05425.pdb.gz						3D structure for PF05425 after supplementing by metagenome from soil biome 
-│   │   ├── PF12597.hhba3m						multiple sequence alignment in a3m format 
-│   │   ├── PF12597.hhbaln						multiple sequence alignment in aln format
-│   │   ├── PF12597.hmsa3m						multiple sequence alignment for C-QUARK 
-│   │   ├── PF12597.hmsaln						multiple sequence alignment for C-QUARK 
-│   │   ├── PF12597.jaca3m						multiple sequence alignment for C-QUARK 
-│   │   ├── PF12597.jacaln						multiple sequence alignment for C-QUARK 
-│   │   └── PF12597.pdb.gz						3D structure for PF05425 after supplementing by metagenome from soil biome 
-│   ├── file1_supplementary table S4.xlsx		List of the project for four biomes and related information.
-│   ├── file2_the details of MAGs.xlsx			detail information for the assembled metagenome bins
-│   ├── file3_lake_Flagellum_gene_location.csv	the gene location of Flagellum genes used in our project
-│   ├── file4_soil_cop_family_gene_location.csv	the gene location of cop genes used in our project
-│   └── GO_annotation							the folder retrieving the GO annotation in four biomes 
-│       ├── Fermentor_BP.csv					the GO annotation identified as Biological Process in Fermentor biome
-│       ├── Fermentor_CC.csv					the GO annotation identified as Celluar Composition in Fermentor biome
-│       ├── Fermentor_MF.csv					the GO annotation identified as Molecular Function in Fermentor biome
-│       ├── Gut_BP.csv							the GO annotation identified as Biological Process in Gut biome
-│       ├── Gut_CC.csv							the GO annotation identified as Celluar Composition in Gut biome
-│       ├── Gut_MF.csv							the GO annotation identified as Molecular Function in Gut biome
-│       ├── Lake_BP.csv							the GO annotation identified as Biological Process in Lake biome
-│       ├── Lake_CC.csv							the GO annotation identified as Celluar Composition in Lake biome
-│       ├── Lake_MF.csv							the GO annotation identified as Molecular Function in Lake biome
-│       ├── Soil_BP.csv							the GO annotation identified as Biological Process in Soil biome
-│       ├── Soil_CC.csv							the GO annotation identified as Celluar Composition in Soil biome
-│       └── Soil_MF.csv							the GO annotation identified as Molecular Function in Soil biome
-├── img											the figure about workflow and enrichment model 
-│   ├── overview.png							the overview of biome–species–function relationship
-│   └── Figure2.png								the enrichment model
-└── script										The analysis script for the analysis of biome–species–function relationship
-    ├── 1_metagenomeanalysis					The script for visulazation of the metagenome taxonomical composition
-    │   ├── 1_relative_abundance_.R				The script for the visulazation of relative abundance of four biomes
-    │   ├── 2_PCoA.R							The PCoA analysis for the samples from four biomes
-    │   └── 3_heatmap.R							Heatmap for the illustration of the distribution of protein domains
-    ├── 2_enrichmentanalysis					Scripts for the enrichment analysis
-    │   ├── hypergeometric.R					Script for the hypergeometric
-    │   ├── MULTI_HYPERGEO_TEST.R				Script for the multi-hypergeometric analysis
-    │   └── shaped2048.csv						Example input for the enrichment analysis
-    ├── 3_Figure3and4							Scripts for the Figure 3 and Figure 4
-    │   └── 1_gene_location.R					Script for Gene location illustration
-    └── 4_3D structure prediction				Script for the MSA construction and 3D structure prediction 
-        ├── example								Example for the MSA constructed by different dataset
-        │   ├── PF02677.hmm.ferm_fasta			MSA constructed by data from Engineered biome
-        │   ├── PF02677.hmm_gut.fasta			MSA constructed by data from Gut biome
-        │   ├── PF02677.hmm.lake_fasta			MSA constructed by data from Lake biome
-        │   ├── PF02677.hmm_soil.fasta			MSA constructed by data from Soil biome
-        │   ├── PF02677.merged.fasta			MSA constructed by data from four biomes
-        │   ├── results							MSA counstruced by DeepMSA
-        │   │   ├── PF02677.deepa3m				MSA in a3m format
-        │   │   ├── PF02677.deepaln				MSA in alm format
-        │   │   ├── PF02677.hmsa3m				MSA constructed by DeepMSA
-        │   │   ├── PF02677.hmsaln				MSA constructed by DeepMSA
-        │   │   ├── PF02677.nofilter.deepa3m	MSA filtered by DeepMSA
-        │   │   └── PF02677.nofilter.deepaln	MSA filtered by DeepMSA
-        │   └── workdir							Workdir for DeepMSA
-        │       ├── hms.db						Search database for DeepMSA
-        │       ├── hms.db.ssi					Index for the search database
-        │       ├── seq.a3m						aligned sequences in a3m format
-        │       ├── seq.aln						aligned sequences in aln format
-        │       ├── seq.fasta					aligned sequences in fasta format
-        │       ├── seq.hhba3m					aligned sequences in hhba3m database
-        │       ├── seq.hhbaln					aligned sequences in hhbaln database
-        │       ├── seq.hmsa3m					aligned sequences in hmsa3m database
-        │       ├── seq.hmsaln					aligned sequences in hmsaln database
-        │       ├── seq.jaca3m					aligned sequences in jaca3m database
-        │       ├── seq.jacaln					aligned sequences in jacaln database
-        │       ├── seq.nofilter.a3m			aligned sequences in a3m format without filter
-        │       └── seq.nofilter.aln			aligned sequences in aln format without filter
-        ├── fix-data.py							fix the format errors in input data
-        └── run-deepmsa.sh						shell script for runing DeepMSA
+├── data                                        Intermediate file for the analysis of biome–species–function relationship 
+│   ├── 3Dstructure                             3D structure model and multiple sequences alignment for PF05425 and PF12597
+│   │   ├── PF05425.hhba3m                      multiple sequence alignment in a3m format 
+│   │   ├── PF05425.hhbaln                      multiple sequence alignment in aln format
+│   │   ├── PF05425.hmsa3m                      multiple sequence alignment for C-QUARK 
+│   │   ├── PF05425.hmsaln                      multiple sequence alignment for C-QUARK
+│   │   ├── PF05425.jaca3m                      multiple sequence alignment for C-QUARK
+│   │   ├── PF05425.jacaln                      multiple sequence alignment for C-QUARK
+│   │   ├── PF05425.pdb.gz                      3D structure for PF05425 after supplementing by metagenome from soil biome 
+│   │   ├── PF12597.hhba3m                      multiple sequence alignment in a3m format 
+│   │   ├── PF12597.hhbaln                      multiple sequence alignment in aln format
+│   │   ├── PF12597.hmsa3m                      multiple sequence alignment for C-QUARK 
+│   │   ├── PF12597.hmsaln                      multiple sequence alignment for C-QUARK 
+│   │   ├── PF12597.jaca3m                      multiple sequence alignment for C-QUARK 
+│   │   ├── PF12597.jacaln                      multiple sequence alignment for C-QUARK 
+│   │   └── PF12597.pdb.gz                      3D structure for PF05425 after supplementing by metagenome from soil biome 
+│   ├── file1_supplementary table S4.xlsx       List of the project for four biomes and related information.
+│   ├── file2_the details of MAGs.xlsx          Detail information for the assembled metagenome bins
+│   ├── file3_lake_Flagellum_gene_location.csv  The gene location of Flagellum genes used in our project
+│   ├── file4_soil_cop_family_gene_location.csv The gene location of cop genes used in our project
+│   └── GO_annotation                           The folder retrieving the GO annotation in four biomes 
+│       ├── Fermentor_BP.csv                    The GO annotation identified as Biological Process in Fermentor biome
+│       ├── Fermentor_CC.csv                    The GO annotation identified as Celluar Composition in Fermentor biome
+│       ├── Fermentor_MF.csv                    The GO annotation identified as Molecular Function in Fermentor biome
+│       ├── Gut_BP.csv                          The GO annotation identified as Biological Process in Gut biome
+│       ├── Gut_CC.csv                          The GO annotation identified as Celluar Composition in Gut biome
+│       ├── Gut_MF.csv                          The GO annotation identified as Molecular Function in Gut biome
+│       ├── Lake_BP.csv                         The GO annotation identified as Biological Process in Lake biome
+│       ├── Lake_CC.csv                         The GO annotation identified as Celluar Composition in Lake biome
+│       ├── Lake_MF.csv                         The GO annotation identified as Molecular Function in Lake biome
+│       ├── Soil_BP.csv                         The GO annotation identified as Biological Process in Soil biome
+│       ├── Soil_CC.csv                         The GO annotation identified as Celluar Composition in Soil biome
+│       └── Soil_MF.csv                         The GO annotation identified as Molecular Function in Soil biome
+├── img                                         The figure about workflow and enrichment model 
+│   ├── overview.png                            The overview of biome–species–function relationship
+│   └── Figure2.png                             The enrichment model
+└── script                                      The analysis script for the analysis of biome–species–function relationship
+    ├── 1_metagenomeanalysis                    The script for visulazation of the metagenome taxonomical composition
+    │   ├── 1_relative_abundance_.R             The script for the visulazation of relative abundance of four biomes
+    │   ├── 2_PCoA.R                            The PCoA analysis for the samples from four biomes
+    │   └── 3_heatmap.R                         Heatmap for the illustration of the distribution of protein domains
+    ├── 2_enrichmentanalysis                    Scripts for the enrichment analysis
+    │   ├── hypergeometric.R                    Script for the hypergeometric
+    │   ├── MULTI_HYPERGEO_TEST.R               Script for the multi-hypergeometric analysis
+    │   └── shaped2048.csv                      Example input for the enrichment analysis
+    ├── 3_Figure3and4                           Scripts for the Figure 3 and Figure 4
+    │   └── 1_gene_location.R                   Script for Gene location illustration
+    └── 4_3D structure prediction               Script for the MSA construction and 3D structure prediction 
+        ├── example                             Example for the MSA constructed by different dataset
+        │   ├── PF02677.hmm.ferm_fasta          MSA constructed by data from Engineered biome
+        │   ├── PF02677.hmm_gut.fasta           MSA constructed by data from Gut biome
+        │   ├── PF02677.hmm.lake_fasta          MSA constructed by data from Lake biome
+        │   ├── PF02677.hmm_soil.fasta          MSA constructed by data from Soil biome
+        │   ├── PF02677.merged.fasta            MSA constructed by data from four biomes
+        │   ├── results                         MSA counstruced by DeepMSA
+        │   │   ├── PF02677.deepa3m             MSA in a3m format
+        │   │   ├── PF02677.deepaln             MSA in alm format
+        │   │   ├── PF02677.hmsa3m              MSA constructed by DeepMSA
+        │   │   ├── PF02677.hmsaln              MSA constructed by DeepMSA
+        │   │   ├── PF02677.nofilter.deepa3m    MSA filtered by DeepMSA
+        │   │   └── PF02677.nofilter.deepaln    MSA filtered by DeepMSA
+        │   └── workdir                         Workdir for DeepMSA
+        │       ├── hms.db                      Search database for DeepMSA
+        │       ├── hms.db.ssi                  Index for the search database
+        │       ├── seq.a3m                     Aligned sequences in a3m format
+        │       ├── seq.aln                     Aligned sequences in aln format
+        │       ├── seq.fasta                   Aligned sequences in fasta format
+        │       ├── seq.hhba3m                  Aligned sequences in hhba3m database
+        │       ├── seq.hhbaln                  Aligned sequences in hhbaln database
+        │       ├── seq.hmsa3m                  Aligned sequences in hmsa3m database
+        │       ├── seq.hmsaln                  Aligned sequences in hmsaln database
+        │       ├── seq.jaca3m                  Aligned sequences in jaca3m database
+        │       ├── seq.jacaln                  Aligned sequences in jacaln database
+        │       ├── seq.nofilter.a3m            Aligned sequences in a3m format without filter
+        │       └── seq.nofilter.aln            Aligned sequences in aln format without filter
+        ├── fix-data.py                         Fix the format errors in input data
+        └── run-deepmsa.sh                      Shell script for runing DeepMSA
 ```
 
 ### Prerequisites
