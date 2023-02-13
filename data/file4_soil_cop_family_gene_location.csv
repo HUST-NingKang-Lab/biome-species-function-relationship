@@ -1,0 +1,116 @@
+molecule,gene,start,end,strand,direction
+Staphylococcus aureus ET3-1,cwrA,513948,514139,forward,1
+Staphylococcus aureus ET3-1,copA,514379,516787,forward,1
+Staphylococcus aureus ET3-1,copZ,517136,517342,forward,1
+Staphylococcus aureus ET3-1,dld,517432,518430,reverse,-1
+Staphylococcus aureus ET3-1,copB,518453,519607,reverse,-1
+Staphylococcus aureus ET3-1,hpyO,520034,521542,reverse,-1
+Staphylococcus aureus ET3-1,FDFT1,521554,522417,reverse,-1
+Staphylococcus aureus ET3-1,crtQ,522454,523581,reverse,-1
+Staphylococcus aureus ET3-1,hpyO,523587,525080,reverse,-1
+Staphylococcus aureus ET3-1,crtO,525073,525561,reverse,-1
+Staphylococcus aureus ET3-1,cosS,525736,526503,reverse,-1
+Staphylococcus aureus ET3-1,NAA40 ,526865,528676,reverse,-1
+Staphylococcus aureus ET3-1,Aanat ,529187,529675,reverse,-1
+Staphylococcus aureus ET3-1,isaA,529951,530652,reverse,-1
+Staphylococcus aureus ET3-1,mtlA,531260,532315,reverse,-1
+Staphylococcus aureus MRSA252,murF,22155,23513,reverse,-1
+Staphylococcus aureus MRSA252,cueO,23528,24598,reverse,-1
+Staphylococcus aureus MRSA252,RodA,24916,26118,forward,1
+Staphylococcus aureus MRSA252,copA,26382,26519,reverse,-1
+Staphylococcus aureus MRSA252,copB,26647,26856,reverse,-1
+Staphylococcus aureus MRSA252,csoR,26868,27161,reverse,-1
+Staphylococcus aureus MRSA252,cls,27327,28811,forward,1
+Staphylococcus aureus MRSA252,cueS,28839,29486,forward,1
+Staphylococcus aureus MRSA252,yidC,30199,31071,reverse,-1
+Staphylococcus aureus MRSA252,thiE ,31157,31798,reverse,-1
+Staphylococcus aureus MRSA252,thiM,31800,32591,reverse,-1
+Staphylococcus aureus MRSA252,thiD,32575,33405,reverse,-1
+Staphylococcus aureus MRSA252,tenA,33398,34087,reverse,-1
+Staphylococcus aureus MRSA252,sceD,34473,35168,reverse,-1
+Staphylococcus aureus MRSA252,copZ,35557,35952,reverse,-1
+Staphylococcus aureus MRSA252,YwpF,36146,36586,forward,1
+Staphylococcus aureus MRSA252,fabZ,36644,37084,reverse,-1
+Staphylococcus aureus MRSA252,murA,37118,38383,reverse,-1
+Staphylococcus aureus MRSA252,DUF1146 ,38494,38727,reverse,-1
+Staphylococcus aureus MRSA252,cosS,38859,38951,reverse,-1
+Staphylococcus aureus MRSA252,cosR,39289,39693,reverse,-1
+Staphylococcus aureus MRSA252,atpD,39713,41125,reverse,-1
+Staphylococcus sp.SAU,REPIN1 ,1,975,forward,1
+Staphylococcus sp.SAU,cueO,2173,2391,forward,1
+Staphylococcus sp.SAU,cadD,2620,3237,forward,1
+Staphylococcus sp.SAU,malT,3256,3603,forward,1
+Staphylococcus sp.SAU,pepA,3763,3855,forward,1
+Staphylococcus sp.SAU,copA,4056,4823,reverse,-1
+Staphylococcus sp.SAU,copB,4912,5727,reverse,-1
+Staphylococcus sp.SAU,tnsB,5720,7162,reverse,-1
+Staphylococcus sp.SAU,recA,7134,7727,reverse,-1
+Staphylococcus sp.SAU,blaI,7991,8371,reverse,-1
+Staphylococcus sp.SAU,blaR1,8361,10118,reverse,-1
+Staphylococcus sp.SAU,BlaZ,10225,11070,forward,1
+Staphylococcus sp.SAU,thiQ?,11457,11750,forward,1
+Staphylococcus sp.SAU,pepA,11825,13759,forward,1
+Staphylococcus sp.SAU,YxeA,13763,14074,forward,1
+Staphylococcus sp.SAU,cosS,14086,14712,forward,1
+Staphylococcus sp.SAU,cosR,14894,15127,forward,1
+Staphylococcus sp.SAU,pepA,15451,15546,reverse,-1
+Staphylococcus sp.SAU,DUF536,16139,16882,reverse,-1
+Salmonella typhimurium,YxeA,4782,4994,reverse,-1
+Salmonella typhimurium,thiO,7386,7670,forward,1
+Salmonella typhimurium,tetR(A),9702,10352,forward,1
+Salmonella typhimurium,cueO,10384,10626,reverse,-1
+Salmonella typhimurium,ompC,10932,11768,reverse,-1
+Salmonella typhimurium,aph(3'')-Ib,11768,12571,reverse,-1
+Salmonella typhimurium,sul2,12632,13447,reverse,-1
+Salmonella typhimurium,copA,14593,15432,reverse,-1
+Salmonella typhimurium,copB,15462,15668,reverse,-1
+Salmonella typhimurium,atpD,15670,15882,reverse,-1
+Salmonella typhimurium,cueR,15943,18072,reverse,-1
+Salmonella typhimurium,mobC,18271,18555,forward,1
+Salmonella typhimurium,tetA,19286,20485,reverse,-1
+Salmonella typhimurium,tetR,20591,21241,forward,1
+Salmonella typhimurium,cusS,21273,21515,reverse,-1
+Salmonella typhimurium,cusR,21821,22657,reverse,-1
+Salmonella typhimurium,aph3,22657,23415,reverse,-1
+Salmonella typhimurium,sul2,23520,24335,reverse,-1
+Salmonella typhimurium,RPA1,24642,25493,reverse,-1
+Salmonella typhimurium,ATAD2,25480,26319,reverse,-1
+Salmonella typhimurium,mobA,29159,29443,forward,1
+Acidithrix,thiO,335,1195,forward,1
+Acidithrix,NAA50,3085,3711,forward,1
+Acidithrix,ompC,3723,4034,reverse,-1
+Acidithrix,copA,4038,5972,reverse,-1
+Acidithrix,copB,6047,6340,reverse,-1
+Acidithrix,DUF2791 ,6754,7287,reverse,-1
+Acidithrix,aoxB ,7656,8501,forward,1
+Acidithrix,YbjQ,8608,10365,reverse,-1
+Acidithrix,copZ,10355,10735,reverse,-1
+Acidithrix,ENDO1 ,10999,11592,forward,1
+Acidithrix,dgcN ,13000,13815,reverse,-1
+Acidithrix,stcD,13972,15711,reverse,-1
+Acidithrix,cueS,15914,16006,reverse,-1
+Acidithrix,thiS,16172,16519,forward,1
+Acidithrix,ychF,16538,17155,reverse,-1
+Acidithrix,cueO,19744,20487,forward,1
+Acidithrix,murJ,20706,20891,forward,1
+Salmonella,ENDO1 ,5346,5558,reverse,-1
+Salmonella,stcD,9549,9833,forward,-1
+Salmonella,cueO,10227,10877,reverse,-1
+Salmonella,YxeA,10737,10979,reverse,-1
+Salmonella,ompC,12544,13380,forward,1
+Salmonella,ychF,12502,13305,forward,1
+Salmonella,sul2,14289,15104,reverse,-1
+Salmonella,copA,16114,16953,reverse,-1
+Salmonella,copB,17155,17361,reverse,-1
+Salmonella,atpD,17023,17235,reverse,-1
+Salmonella,cueR,17108,19237,reverse,-1
+Salmonella,mobC,19777,20061,forward,-1
+Salmonella,tetA,19731,20930,reverse,-1
+Salmonella,tetR,20635,21285,forward,1
+Salmonella,cusS,21588,21830,reverse,-1
+Salmonella,cusR,23384,24220,reverse,-1
+Salmonella,aph3,23922,24680,reverse,-1
+Salmonella,sul2,24962,25777,reverse,-1
+Salmonella,RPA1,27118,27969,reverse,1
+Salmonella,ATAD2,25553,26392,reverse,-1
+Salmonella,DUF2842 ,31271,31555,forward,1
