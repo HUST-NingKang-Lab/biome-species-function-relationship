@@ -1,4 +1,4 @@
-# MetaSource
+# Investigation of biome–species–function relationship
 
 This repository is the source code and intermediate results for the research "Microbiome-based enrichment pattern mining has enabled a deeper understanding of the biome–species–function relationship".
 
