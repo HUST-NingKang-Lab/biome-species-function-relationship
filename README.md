@@ -27,22 +27,21 @@ These instructions will get you a copy of the project up and running on
 your local machine for development and testing purposes. See deployment
 for notes on how to deploy the project on a live system.
 ```reStructuredText
-.
 ├── data                                        Intermediate file for the analysis of biome–species–function relationship 
 │   ├── 3Dstructure                             3D structure model and multiple sequences alignment for PF05425 and PF12597
-│   │   ├── PF05425.hhba3m                      multiple sequence alignment in a3m format 
-│   │   ├── PF05425.hhbaln                      multiple sequence alignment in aln format
-│   │   ├── PF05425.hmsa3m                      multiple sequence alignment for C-QUARK 
-│   │   ├── PF05425.hmsaln                      multiple sequence alignment for C-QUARK
-│   │   ├── PF05425.jaca3m                      multiple sequence alignment for C-QUARK
-│   │   ├── PF05425.jacaln                      multiple sequence alignment for C-QUARK
+│   │   ├── PF05425.hhba3m                      Multiple sequence alignment in a3m format 
+│   │   ├── PF05425.hhbaln                      Multiple sequence alignment in aln format
+│   │   ├── PF05425.hmsa3m                      Multiple sequence alignment for C-QUARK 
+│   │   ├── PF05425.hmsaln                      Multiple sequence alignment for C-QUARK
+│   │   ├── PF05425.jaca3m                      Multiple sequence alignment for C-QUARK
+│   │   ├── PF05425.jacaln                      Multiple sequence alignment for C-QUARK
 │   │   ├── PF05425.pdb.gz                      3D structure for PF05425 after supplementing by metagenome from soil biome 
-│   │   ├── PF12597.hhba3m                      multiple sequence alignment in a3m format 
-│   │   ├── PF12597.hhbaln                      multiple sequence alignment in aln format
-│   │   ├── PF12597.hmsa3m                      multiple sequence alignment for C-QUARK 
-│   │   ├── PF12597.hmsaln                      multiple sequence alignment for C-QUARK 
-│   │   ├── PF12597.jaca3m                      multiple sequence alignment for C-QUARK 
-│   │   ├── PF12597.jacaln                      multiple sequence alignment for C-QUARK 
+│   │   ├── PF12597.hhba3m                      Multiple sequence alignment in a3m format 
+│   │   ├── PF12597.hhbaln                      Multiple sequence alignment in aln format
+│   │   ├── PF12597.hmsa3m                      Multiple sequence alignment for C-QUARK 
+│   │   ├── PF12597.hmsaln                      Multiple sequence alignment for C-QUARK 
+│   │   ├── PF12597.jaca3m                      Multiple sequence alignment for C-QUARK 
+│   │   ├── PF12597.jacaln                      Multiple sequence alignment for C-QUARK 
 │   │   └── PF12597.pdb.gz                      3D structure for PF05425 after supplementing by metagenome from soil biome 
 │   ├── file1_supplementary table S4.xlsx       List of the project for four biomes and related information.
 │   ├── file2_the details of MAGs.xlsx          Detail information for the assembled metagenome bins
@@ -116,17 +115,22 @@ The reqirement of package of each script is listed in the top of each script
 ### Usage
 
 1.In the folder "data",intermediate files for the analysis of biome–species–function relationship were retrived.
-2.For the script in "4_3D structure prediction":
-the run-deepmsa.sh
+
+2.For the script in folder "4_3D structure prediction":
+The run-deepmsa.sh
 usage: sh run-deepmsa.sh PF02677 example/PF02677.merged.fasta example/workdir example/results
-PF02677 is the target pfam family and the the name of the result folder 
-example/PF02677.merged.fasta is the collection of homologous seuqneces collected from four biomes
-example/workdir and example/result are the folder collecting the intermediate data and msa result, respectively.
+
+-PF02677 is the target pfam family and the the name of the result folder 
+
+-example/PF02677.merged.fasta is the collection of homologous seuqneces collected from four biomes
+
+-example/workdir and example/result are the folder collecting the intermediate data and msa result, respectively.
+
 ## Authors
 
-Pengshuo Yang |yangps@hust.deu.cn|Ph.D., School of Life Science and Technology, Huazhong University of Science & Technology
-Xue Zhu|D201980519@hust.com|Ph.D.Candidate, School of Life Science and Technology, Huazhong University of Science & Technology
-Kang Ning|ningkang@hust.edu.cn|Professor, School of Life Science and Technology, Huazhong University of Science & Technology
+Pengshuo Yang | yangps@hust.deu.cn|Ph.D., School of Life Science and Technology, Huazhong University of Science & Technology
+Xue Zhu| D201980519@hust.com|Ph.D.Candidate, School of Life Science and Technology, Huazhong University of Science & Technology
+Kang Ning| ningkang@hust.edu.cn|Professor, School of Life Science and Technology, Huazhong University of Science & Technology
 ## License
 
 This project is licensed under the [GNU General Public License v3.0](LICENSE.md)
