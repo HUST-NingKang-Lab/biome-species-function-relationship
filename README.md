@@ -129,7 +129,7 @@ usage: sh run-deepmsa.sh PF02677 example/PF02677.merged.fasta example/workdir ex
 ## Authors
 
 Pengshuo Yang | yangps@hust.deu.cn|Ph.D., School of Life Science and Technology, Huazhong University of Science & Technology
-Xue Zhu| D201980519@hust.com|Ph.D.Candidate, School of Life Science and Technology, Huazhong University of Science & Technology
+Xue Zhu| D201980580@hust.com|Ph.D.Candidate, School of Life Science and Technology, Huazhong University of Science & Technology
 Kang Ning| ningkang@hust.edu.cn|Professor, School of Life Science and Technology, Huazhong University of Science & Technology
 ## License
 
